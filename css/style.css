@@ -1,0 +1,215 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/*---=== main-header ===---*/
+
+.main-header {
+    background-color: #9f9f9f;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*---=== /main-header ===---*/
+
+/*---=== main-content ===---*/
+
+.main-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calc-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.calc-form .custom-input-wrapper {
+    width: 100%;
+    margin-right: 20px;
+}
+
+/*---=== text input ===---*/
+
+.custom-input-wrapper__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.custom-input[type="text"] {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #333333;
+    text-align: left;
+    padding: 0 12px;
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    -webkit-appearance: none;
+}
+
+.custom-input::-ms-clear {
+    display: none;
+}
+
+.custom-input:focus {
+    border-color: #3975bd;
+    outline: 0 none;
+}
+
+.custom-input::-webkit-input-placeholder {
+    color: #808080;
+    line-height: normal;
+}
+
+.custom-input::-moz-placeholder {
+    color: #808080;
+    opacity: 1;
+}
+
+.custom-input:-ms-input-placeholder {
+    color: #808080;
+    line-height: normal;
+}
+
+.custom-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.custom-input::-webkit-inner-spin-button,
+.custom-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*---=== text input ===---*/
+
+/*---=== buttons ===---*/
+
+.custom-btn {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50px;
+    line-height: 1;
+    min-width: 280px;
+    padding: 0 25px;
+    border-radius: 25px;
+    -webkit-transition: background-color .225s ease;
+    -o-transition: background-color .225s ease;
+    transition: background-color .225s ease;
+}
+
+.custom-btn--small {
+    font-size: 13px;
+    min-width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 0 20px;
+}
+
+.custom-btn--blue {
+    color: #ffffff;
+    background-color: #3975bd;
+}
+
+.custom-btn--blue:hover,
+.custom-btn--blue:active {
+    background-color: #2063b4;
+}
+
+/*---=== /buttons ===---*/
+
+.calc-form-result {
+    margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+    .calc-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .calc-form .custom-input-wrapper {
+        margin-right: 0;
+    }
+
+    .custom-btn {
+        margin-top: 20px;
+    }
+}
+
+/*---=== /main-content ===---*/
+
+/*---=== main-footer ===---*/
+
+.main-footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background-color: #777777;
+}
+
+.main-footer__copyrights {
+    font-size: 13px;
+    color: rgba(255,255,255,.3);
+}
+
+/*---=== /main-footer ===---*/
